@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// swuare Pattern
-
 int main()
 {
-    /* int n = 4;
+    /*
+
+    // square Pattern
+    int n = 4;
      for (int i = 1; i <= n; i++)//outer loop
      {
          for (int j = 1; j <= n; j++)//inner loop
@@ -14,6 +15,10 @@ int main()
          }
          cout << endl;
      }
+
+
+
+
 
     // ABCD printing using the logic
 
