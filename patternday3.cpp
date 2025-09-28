@@ -2,6 +2,10 @@
 using namespace std;
 
 /*
+
+//Hollow rectangle * (using n, m).
+
+
  int n, m;
     cin >> n;
     cin >> m;
@@ -275,21 +279,7 @@ int n;
         cout << endl;
     };
 -----------------------------------------------
--------------------------------------------
-----------------------------------------------------
-------------------------------------------------
---------------------------------------------
---------------------------------------------
----------------------------------------
------------------------------------
------------------------------------------
-----------------------------------
-
-*/
-
-int main()
-{
-    int x, y;
+int x, y;
     cout << "inter the number of row : ";
     cin >> x;
     cout << "inter the number of Column : ";
@@ -303,5 +293,197 @@ int main()
         cout << endl;
     }
 
+-------------------------------------------
+patter - A
+ int n;
+    cin >> n;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= n; j++)
+        {
+            if (i == 0 || i == n / 2 || j == 0 || j == n)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+----------------------------------------------------
+binary to decimal conversion
+
+
+ int n;
+    cin >> n;
+    int power = 1;
+
+    int ans = 0;
+    while (n > 0)
+    {
+        int lastdigit = n % 10;
+        ans += lastdigit * power;
+        power *= 2;
+        n /= 10;
+    }
+
+    cout << ans;
     return 0;
+------------------------------------------------
+Decimal to binary number
+
+  int n;
+    cin >> n;
+    int power = 1;
+    int ans = 0;
+    while (n > 0)
+    {
+        int half = n % 2;
+        ans += half * power;
+        power *= 10;
+        n = n / 2;
+    }
+    cout << ans << endl;
+--------------------------------------------
+
+int minOfTwo(int a, int b)
+{
+    if (a < b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+cout << minOfTwo(4, 2);
+--------------------------------------------
+
+ calculate the sum of number 1 to n
+
+ int sumOfNumbers(int n)
+{
+    int ans = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        ans += i;
+    }
+    return ans;
+}
+
+
+in main :
+cout << sumOfNumbers(5);
+---------------------------------------
+
+factorial number sum
+
+int factNumber(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+
+        fact *= i;
+    }
+    return fact;
+}
+
+int main()
+{
+
+    cout << factNumber(4) << endl;
+
+    cout << factNumber(5);
 };
+-----------------------------------
+
+calculate sum of digits of a number
+
+int sumOfDigit(int n)
+{
+    int sum = 0;
+    while (n > 0)
+    {
+        int last = n % 10;
+        sum += last;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << sumOfDigit(n);
+};
+-----------------------------------------
+
+// Function to calculate factorial
+int factorial(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to calculate nCr
+int binomialSum(int n, int r)
+{
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
+
+int main()
+{
+    cout << binomialSum(8, 2); // Output: 28
+    return 0;
+}
+------------------------------------------
+chicking prime number
+
+int checkPrime(int a)
+{
+
+    for (int i = 2; i < a / 2; i++)
+    {
+
+        if (a % i == 0)
+        {
+
+            cout << a << " its not Prime Number : ";
+            return 0;
+        }
+    }
+    cout << a << " is Prime number";
+    return 1;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    checkPrime(n);
+    return 0;
+}
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+*/
+int main()
+{
+    
+
+
+
+
+}
