@@ -369,29 +369,123 @@ int main()
 --------------------------------------------------------------
 
 
-*/
-
 #include <iostream>
 #include <vector>
 using namespace std;
 
-int reversevec(vector<int> vec)
+int main()
 {
-    for (int vect : vec)
+
+    cout << "all possible Subarray's"<<endl;
+    int n = 5;
+    int arr[5] = {1, 2, 3, 4, 5};
+    for (int st = 0; st < n; st++)
     {
-        int b[];
-        cin >> b[vect];
-        for (int i = b[]; i > = 0; i--)
+
+        for (int end = st; end < n; end++)
         {
 
-            cout << "this is array : " << b;
+            for (int i = st; i <= end; i++)
+            {
+                cout << arr[i];
+            }
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+
+
+
+
+
+
+
+-------------------------------------------------------------
+sum of array
+#include <iostream>
+#include <climits>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int array[] = {6, 5, 8, 3, 8, 6, 2};
+    int sum = 0;
+    int size = sizeof(array) / array[o];
+    for (int i = 0; i < size; i++)
+    {
+        sum = sum + array[i];
+    }
+    cout << sum;
+}
+
+
+
+------------------------------------------
+#include <iostream>
+#include <climits>
+#include <vector>
+using namespace std;
+
+int maximum(int array[], int size)
+{
+    int max = INT_MIN;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (array[i] > max)
+        {
+            max = array[i];
         }
     }
+    return max;
+}
+
+int LearnerSearch(int array[], int size, int target)
+{
+
+    for (int i = 0; i < size; i++)
+    {
+
+        if (array[i] == target)
+        {
+            return i;
+        }
+    }
+    return -1;
 }
 
 int main()
 {
-    vector<int> vec;
-    vec = {1, 2, 3, 4, 5, 6};
-    reversevec(vec);
+    int array[] = {3, 7, 18, 9, 11};
+
+    int size = sizeof(array) / sizeof(array[0]);
+
+    cout << maximum(array, size) << endl;
+    int target;
+    cout << "inter what you serach :" << endl;
+    cin >> target;
+    cout << "Index of serched Eliment is : " << LearnerSearch(array, size, target);
+}
+
+
+*/
+
+
+
+
+#include <iostream>
+#include <climits>
+#include <vector>
+using namespace std;
+
+
+
+
+
+
+int main(){
+
+
 }
