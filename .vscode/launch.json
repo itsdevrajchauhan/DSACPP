@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/DSACPP",
-      "program": "c:/DSACPP/build/Debug/outDebug",
+      "cwd": "c:/DSACPP/C++",
+      "program": "c:/DSACPP/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

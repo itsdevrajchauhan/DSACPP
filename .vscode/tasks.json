@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and Run C++ (input/output)",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "cd /d \"${fileDirname}\" && g++ \"${file}\" -std=c++17 -o \"${fileBasenameNoExtension}.exe\" && \"${fileBasenameNoExtension}.exe\" < input.txt > output.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

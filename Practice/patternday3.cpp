@@ -802,3 +802,6 @@ int main()
 };
 //practice pattern
 >>>>>>> 74e53a7a3382a27f68cef39203c26415c99400cc
+
+
+
