@@ -862,7 +862,6 @@ int main()
 --------------------------------------------------------------
 
 
-*/
 
 #include <iostream>
 #include <vector>
@@ -889,3 +888,15 @@ int main()
     reversevec(vec);
 }
 
+
+*/
+
+#include<iostream>
+using namespace std; 
+int main(){
+    
+
+
+    
+     return 0;
+}

@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+
 
 /*
 -----------------------------------------------------
@@ -627,14 +625,382 @@ index++;
     }
 
 ----------------------------------------------------------------
-    */
+#include<iostream>
+using namespace std;
+int fib(int n){
+     if(n==0){
+        return 0;
+    }
+    else if (n==1)
+    {
+        return 1;
+    }
+    else{
+        return  fib(n-1)+fib(n-2);
+    }
+
+}
+
+int main(){
+
+    int size;
+    cin>>size;
+    fib(size);
+for(int i=0;i<size;i++){
+    cout<<fib(i);
+}
+
+
+
+     return 0;
+}
+     --------------------------------------------------------
+     #include <iostream>
+using namespace std;
+int fib(int n)
+{
+    if (n == 0)
+    {
+        return 0;
+    }
+    else if (n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
+
+int main()
+{
+
+    int size;
+    cin >> size;
+    fib(size);
+    int arr1[size];
+    for (int i = 0; i < size; i++)
+    {
+        arr1[i] = fib(i);
+    }
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr1[i];
+    }
+
+    return 0;
+}
+    ----------------------------------------------
+     #include<iostream>
+    using namespace std;
+    int main(){
+        int arr[]={12,33,44,34,5,67};
+        int size=6;
+
+        int small=arr[0];
+        for(int i=0;i<size;i++){
+            if(small>arr[i]){
+
+small=arr[i];
+
+            }
+
+
+
+        }
+        cout<<small;
+
+
+         return 0;
+    }
+-------------------------------------------------------
+#include<iostream>
+   using namespace std;
+   int main(){
+
+    int arr[]={1,23,45,66,75,33};
+    int target;
+    cin>>target;
+    int index=-1;
+    for(int i=1;i<7-1;i++){
+        if(target==arr[i]){
+            index=i;
+        }
+
+    }
+
+
+    cout<<index ;
+
+
+   }
+    ----------------------------------------------
+
+
+   #include<iostream>
+   using namespace std;
+   int main(){
+
+    int arr[]={1,2,3,4,5};
+    int start=0;
+    int end=5-1;
+      for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]<<" " ;
+    }
+cout<<endl;
+
+        while(start<end){
+            int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+
+     return 0;
+   }
+
+--------------------------------------------------
+ #include<iostream>
+    using namespace std;
+    int main(){
+
+        int arr[]={3,4,2,1};
+        int size=4;
+        int count=0;
+        for (int i = 0; i < size; i++)
+        {
+           count+=arr[i];
+        }
+
+        cout<<"sum of the array element :    "<<count;
+         return 0;
+    }
+
+    --------------------------------------------------------------
+
+   #include<iostream>
+   using namespace std;
+
+   int main(){
+    int arr[]={3,4,2,1};
+        int size=4;
+        int count=1;
+        for(int i=0;i<size;i++){
+            count*=arr[i];
+        }
+        cout<<"product of array : "<<count;
+
+
+     return 0;
+   }
+     --------------------------------
+     #include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {3, 4, 2, 1, 2, 3, 22};
+
+    for (int i = 0; i < 7; i++)
+    {
+        int count = 0;
+        for (int j = 0; j < 7; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
+        }
+        if (count == 1)
+        {
+            cout << arr[i];
+        }
+    }
+    return 0;
+}
+
+-------------------------------------------
+         #include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {3, 4, 2, 1, 2, 3, 22};
+    int size=7;
+    int count=0;
+
+    for(int i=0;i<size;i++){
+        for (int j  = 0; j< i; j++)
+        {
+
+
+        }
+
+    }
+
+    return 0;
+}
+
+------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    int size = 6;
+    bool isSorted = true;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > arr[i + 1])
+        {
+            isSorted = false;
+            break;
+        }
+    };
+
+    if (isSorted)
+    {
+        cout << " shorted : " << endl;
+    }
+    else
+    {
+        cout << "not sorted : ";
+    };
+
+    return 0;
+}
+    ---------------------------------------------------
+    #include<iostream>
+using namespace std;
+int main(){
+    // duplicate value deletion
+    int arr[]={1,2,2,3,3,4,5,6,6};
+    int size=9;
+for (int i= 0; i < size; i++)
+{
+    for (int  j = 0; j < size; j++)
+    {
+        if(arr[i]==arr[j]){
+
+            break;
+
+        }
+        cout<<arr[i];
+
+    }
+
+}
+
+
+
+     return 0;
+}
+    -----------------------------------------------------------------------
+
+
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
 
+    int arr[] = {1, 2, 2, 3, 3};
+    int size = 5;
+
+    cout << "After removing duplicates: ";
+
+    for (int i = 0; i < size; i++)
+    {
+        bool isDuplicate = false;
+
+        for (int j = 0; j < i; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                isDuplicate = true;
+                break;
+            }
+        }
+
+        if (!isDuplicate)
+        {
+            cout << arr[i];
+        }
+    }
     return 0;
+}
+-----------------------------------------
+
+ #include<iostream>
+ using namespace std; 
+ int main(){
+    int arr[] = {1, 4, 2, 9, 3};
+    int size = 5;
+int x;
+    cout<<"enter the minimum Limit : "<<endl;
+    cin>>x;
+
+    for (int i = 0; i < size; i++)
+    {
+        if()
+    }
+    
+     return 0;
+ }
+
+
+
+
+
+
+
+----------------------------------------
+ */
+
+
+#include<iostream>
+#include <vector>
+using namespace std; 
+
+int BinarySearch(  vector<int>arr,int target ){
+
+int start=0;
+int end=9-1;
+
+
+while (start<=end)
+{
+  int mid=start+(end-start)/2;
+   if(target>arr[mid]){
+    start=mid+1;
+
+
+   }else if (target<arr[mid])
+   {
+    end=mid-1;
+   }
+   else{
+    return mid;
+   }
+   
+   
+}
+
+return -1;
+
+
+}
+int main(){
+   vector<int>arr={1,2,3,5,6,7,12,35,77};
+   int target=7;
+   cout<<BinarySearch(arr,target)<<endl;
+     return 0;
 }
